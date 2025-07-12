@@ -109,7 +109,31 @@ bool Search(BstNode* root, int data) {
     else return Search(root->right, data);
 }
 
-## The Graphs part 
+---
+
+## 🌐 Graphs
+
+A **Graph** is a non-linear data structure consisting of **vertices (nodes)** connected by **edges**. It can be directed or undirected, weighted or unweighted.
+
+### ✅ Representations:
+- **Adjacency List**: Efficient for sparse graphs
+- **Adjacency Matrix**: Efficient for dense graphs
+
+### 🔧 Supported Algorithms:
+- `addEdge(u, v)`: Add an edge between nodes `u` and `v`
+- `DFS(start)`: Depth-First Search traversal
+- `BFS(start)`: Breadth-First Search traversal
+- (Optional) Cycle Detection (DFS-based or Union-Find)
+- (Optional) Topological Sorting
+
+### 🧪 Sample Code:
+```cpp
+Graph g(5);
+g.addEdge(0, 1);
+g.addEdge(0, 4);
+g.addEdge(1, 2);
+g.BFS(0); // Traverses starting from node 0
+
 
 ---
 
