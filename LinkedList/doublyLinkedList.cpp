@@ -91,15 +91,15 @@ public:
 
 
     // Print list in forword order
-    void Print() const {
-        std::cout << "Forword: ";
-        Node* temp = head;
-        while(temp){
-            std::cout<< temp->data << " "; // Output node data
-            temp = temp->next;
+        void Print() const {
+            std::cout << "Forword: ";
+            Node* temp = head;
+            while(temp){
+                std::cout<< temp->data << " "; // Output node data
+                temp = temp->next;
+            }
+            std::cout<< std::endl;
         }
-        std::cout<< std::endl;
-    }
 
     // Print list in reverse order
     void ReversePrint() const {
